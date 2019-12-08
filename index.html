@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- це для керування розміткою на моб пристроях -->
+	<title>DigitShop</title>
+	<link rel="stylesheet" href="./css/category.css">
+	<link rel="shortcut icon" href="./img/shortcut-icon.png">
+</head>
+<body>
+	<div id="gray-background"></div>
+	
+	<div id="sidebar">	
+		<div class="sidebar-btn" id="sidebar-btn">
+			<div class="hamburger">&#9776;</div>
+		</div>
+		<div class="sidebar-title">Menu</div>
+		<ul class="sidebar-list">
+			
+			<li>
+				<a href="#" class="sidebar-item">Catalogue</a>
+				<ul class="sidebar-nested-list">
+					<li><a class="select-category" href="#">All goods</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="sidebar-item">About us</a></li>
+			<li><a href="#" class="sidebar-item">Contacts</a></li>
+			
+		</ul>
+	</div>
+
+	<div id="shopping-cart-sidebar">	
+		<div class="shopping-cart-btn" id="shopping-cart-sidebar-btn">
+			<img src="./img/shopping-cart.png">
+			<div class="cart-products-amount">0</div>
+		</div>
+
+		<div class="cart-scroll-container">
+			<div class="shopping-cart-title">Shopping cart</div>
+			<div class="shopping-cart-container"></div>
+
+			<div class="cart-total-container hide">
+				<div class="purchase-btn">Purchase</div>
+				<div class="cart-total"></div>
+			</div>
+		</div>		
+	</div>
+
+	<header>
+		<a class="logo" href="#">
+			<div >DigitShop</div>
+		</a>
+		<nav>
+			<ul class="menu">
+				
+				<li class="dropdown">
+					<a href="#" class="drop-btn menu-item">Catalogue</a>
+					<div class="dropdown-content">
+						<a class="select-category" href="#">All goods</a>
+						
+					</div>
+				</li>
+				<li><a href="#" class="menu-item">About us</a></li>
+				<li><a href="#" class="menu-item">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="goods">
+		<a class="current-category">All goods</a>
+		<div class="grid"></div>
+	</main>
+
+	<footer>
+		<div>&copy; Кураш Ярослава, КНІТ-2018, НаУКМА</div>
+		<a href="https://www.instagram.com/yar0slava_/?hl=en">Instagram</a>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="js/sidebars.js"></script>
+	<!-- <script src="../src/blouse_catalog.js"></script> -->
+	<!-- <script src="../src/serviceProducts.js"></script> -->
+	<script src="js/cart_service.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
